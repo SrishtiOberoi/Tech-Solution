@@ -11,6 +11,28 @@ The setup provisions a complete environment, following Infrastructure as Code (I
 ✅ Remote State Management – Azure Storage backend for secure Terraform state.
 ✅ Best Practices – Secure design with Azure networking & role-based access.
 
+📂 Repository Layout
+bash
+Copy
+Edit
+terraform-infra/
+│
+├── modules/
+│   ├── network/        # VNet, subnets, NSGs, routing
+│   ├── compute/        # VM scale sets, VMs, extensions
+│   ├── storage/        # Storage accounts, containers
+│   └── security/       # Key Vault, Policy assignments, RBAC
+
+├── environments/
+│   ├── dev/
+│   ├── test/
+│   └── prod/
+
+├── scripts/            # Helper scripts (bootstrap, deploy, destroy)
+├── .gitignore
+├── README.md
+└── LICENSE
+
  Deployment Workflow-
 # 1️⃣ Clone the repository
 git clone https://github.com/<your-username>/terraform-infra.git
