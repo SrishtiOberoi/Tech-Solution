@@ -5,33 +5,13 @@ This project demonstrates the design and implementation of a scalable and secure
 The setup provisions a complete environment, following Infrastructure as Code (IaC) best practices, to ensure reusability, maintainability, and automation.
 
 ✨ Key Features
-✅ Modular Code – Isolated modules for networking, compute, storage, and security.
-✅ Azure Resource Deployment – VNets, Subnets, NSGs, VMs, Storage Accounts.
+
+✅ Azure Resource Deployment – Resource group
 ✅ Environment Configurations – Easily deploy dev, test, prod.
-✅ Remote State Management – Azure Storage backend for secure Terraform state.
 ✅ Best Practices – Secure design with Azure networking & role-based access.
 
 📂 Repository Layout
-bash
-Copy
-Edit
-terraform-infra/
-│
-├── modules/
-│   ├── network/        # VNet, subnets, NSGs, routing
-│   ├── compute/        # VM scale sets, VMs, extensions
-│   ├── storage/        # Storage accounts, containers
-│   └── security/       # Key Vault, Policy assignments, RBAC
 
-├── environments/
-│   ├── dev/
-│   ├── test/
-│   └── prod/
-
-├── scripts/            # Helper scripts (bootstrap, deploy, destroy)
-├── .gitignore
-├── README.md
-└── LICENSE
 
  Deployment Workflow-
 # 1️⃣ Clone the repository
