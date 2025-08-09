@@ -22,9 +22,13 @@ Works with AzureRM Provider
 📂 Project Structure
 Tech-Solution/
 ├── main.tf         # Main Terraform configuration
+
 ├── variables.tf    # Variables declaration
+
 ├── terraform.tfvars# Variable values
+
 └── README.md       # Project documentation
+
 
 ✨ Key Features
 
